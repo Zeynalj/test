@@ -1,0 +1,12 @@
+trigger:
+  branches:
+    include:
+      - main
+      - develop
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- script: echo Hello, World!
+  displayName: 'Print Hello World'
